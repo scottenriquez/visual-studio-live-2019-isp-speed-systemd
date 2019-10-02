@@ -1,0 +1,9 @@
+[Unit]
+Description=Service for determining internet speeds and logging to third-party persistent storage
+
+[Service]
+Type=notify
+ExecStart=/home/parallels/Documents/GitHub/visual-studio-live-2019-isp-speed-systemd/src/SpeedTestWorkerService/SpeedTestWorkerService/bin/Debug/netcoreapp3.0/publish/SpeedTestWorkerService
+
+[Install]
+WantedBy=multi-user.target
