@@ -3,7 +3,8 @@ Description=Service for determining internet speeds and logging to third-party p
 
 [Service]
 Type=notify
-ExecStart=/home/parallels/Documents/GitHub/visual-studio-live-2019-isp-speed-systemd/src/SpeedTestWorkerService/SpeedTestWorkerService/bin/Debug/netcoreapp3.0/publish/SpeedTestWorkerService
+ExecStart=/home/parallels/Documents/GitHub/visual-studio-live-2019-isp-speed-systemd/src/SpeedTestWorkerService/SpeedTestWorkerService/bin/Release/netcoreapp3.0/linux-x64/publish/SpeedTestWorkerService
+TimeoutSec=900
 
 [Install]
 WantedBy=multi-user.target
