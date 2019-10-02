@@ -23,7 +23,6 @@ namespace SpeedTestWorkerService
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                
                 SpeedTestClient speedTestClient = new SpeedTestClient();
                 Settings settings = speedTestClient.GetSettings();
                 Server bestServer = settings.Servers[0];
